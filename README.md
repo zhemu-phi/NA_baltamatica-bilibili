@@ -1,2 +1,6 @@
-# NA_baltamatica-bilibili
- b站视频对应的数值计算代码及文档
+# 数值计算相关的代码及文档
+
+B站主页
+https://space.bilibili.com/3493276185266693
+
+本仓库内容范围：视频中我参与的代码及文档
