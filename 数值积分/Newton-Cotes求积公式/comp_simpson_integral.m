@@ -4,8 +4,6 @@ function S = comp_simpson_integral(a,b,n,f)
 % f：定义好的函数
 %
 %   Version:            1.0
-%   Author:             PHI1_NA
-%   Contact:            PHI1_NA@outlook.com
 %   last modified:      07/14/2023
     if mod(n,2) != 0    % 判断n是否为偶数，如果不是，使其变为偶数
     	   n = n+1;

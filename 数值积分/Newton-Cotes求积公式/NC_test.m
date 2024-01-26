@@ -1,7 +1,5 @@
 % NC求积例子
 %
-%   Author:             PHI1_NA
-%   Contact:            PHI1_NA@outlook.com
 %   last modified:      09/27/2023
 clc,clear all,format long;
 f1 = @(x)1./(1+x.^2);
