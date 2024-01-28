@@ -27,3 +27,5 @@ baltamatica下载地址： https://www.baltamatica.com/
   - PLU分解 https://www.bilibili.com/video/BV1Sk4y1S7S6
   - Cholesky分解
   - 追赶法解三对角
+  ___ 
+  - Jacobi 迭代法
