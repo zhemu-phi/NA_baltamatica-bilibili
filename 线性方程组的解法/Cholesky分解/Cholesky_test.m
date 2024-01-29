@@ -1,8 +1,8 @@
 % file need: Cholesky_fac.m,    back_substitution_two.m,    gsem_column.m
 % time: 1/18/2024
 clc,clear all;
-addpath("../base","../Gauss消去法解线性方程组") % 加载这两个目录下的函数文件
-% ./ Cholesky_fac.m所在的目录
+addpath("../base","../Gauss消去法") % 加载这两个目录下的函数文件
+% ./  表示当前打开文件所在的目录
 % ../ 这个目录再往前一个目录
 %%
 A1 = [4 12 -16;12 37 -43;-16 -43 98];

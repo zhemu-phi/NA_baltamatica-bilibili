@@ -1,7 +1,7 @@
 % PA = LU test
 %
 %   last modified:      09/27/2023
-
+addpath("../base","../PLU分解") % 加载函数文件
 %% 1
 clc;clear all;
 A = [1 2 -1;2 1 -2; -3 1 1];

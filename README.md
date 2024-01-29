@@ -29,3 +29,4 @@ baltamatica下载地址： https://www.baltamatica.com/
   - 追赶法解三对角
   ___ 
   - Jacobi 迭代法
+  - Gauss-Seidel 迭代法
