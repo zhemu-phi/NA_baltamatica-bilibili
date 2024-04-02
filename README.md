@@ -1,6 +1,6 @@
 # 数值计算相关的代码及文档
 
-B站主页：
+B站对应视频主页：
 https://space.bilibili.com/3493276185266693
 
 本仓库内容范围：视频中我参与的代码及文档
@@ -9,10 +9,11 @@ https://space.bilibili.com/3493276185266693
 
 baltamatica下载地址： https://www.baltamatica.com/
 
-## 目录
+## 目录 
 
 - 插值法
     - Largrange https://www.bilibili.com/video/BV1y24y1F7aG
+    - Newton插值 
     -  Hermite https://www.bilibili.com/video/BV1Qd4y1f7aC
     -  Runge现象 https://www.bilibili.com/video/BV1Bg4y1775j
     -  分段线性 https://www.bilibili.com/video/BV1VT411H7xj
