@@ -2,7 +2,7 @@
 clc;clear;
 x0 = [0.4 0.5 0.6 0.7 0.8];
 y0 = [-0.916291 -0.693147 -0.510826 -0.357765 -0.223143];
-D =divided_differences(x0,y0)
+D =divided_differences(x0,y0,4)
 
 %% Newton插值 test 1 
 clc;clear;
@@ -16,3 +16,15 @@ figure(1)
         plot(x,log(x),'r')
     hold off
     legend('N(x)','ln(x)')
+    
+%%
+clc;clear all;
+x0 = linspace(0,10,5);
+y0 = sin(x0);
+x= linspace(0,10,100);
+y = sin(x);
+[s,M] = Newton_interp(x0,y0,x);
+plot(x,y,'r');
+hold on
+    plot(x,s,'b');
+    hold off
