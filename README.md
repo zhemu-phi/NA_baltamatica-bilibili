@@ -17,6 +17,7 @@ baltamatica下载地址： https://www.baltamatica.com/
     -  Hermite https://www.bilibili.com/video/BV1Qd4y1f7aC
     -  Runge现象 https://www.bilibili.com/video/BV1Bg4y1775j
     -  分段线性 https://www.bilibili.com/video/BV1VT411H7xj
+    -  三次样条插值
 - 数值积分
   - Newton-Cotes https://www.bilibili.com/video/BV1Pg4y1w79Q
   - 复化梯形 https://www.bilibili.com/video/BV1aV411N7qb
