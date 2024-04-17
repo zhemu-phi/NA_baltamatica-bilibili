@@ -3,7 +3,6 @@ function [out1] = piecewise_Hermite_interp(x0,y0,dy0,x)
     % x0 : [x1 x2 ...]
     % y0 : [y1 y2...]
     % dy0 : [y1' y2'...]
-    % length(x)=1
     %
     %   Version:            1.0
     %   last modified:      09/13/2023

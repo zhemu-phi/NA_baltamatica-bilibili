@@ -1,5 +1,5 @@
 % Hermite_v0 例子1
-%   last modified:      05/16/2023
+%   last modified:      04/17/2024
 %   file need: Hermite_interp.m   piecewise_Hermite_interp.m
 clc;clear all;
 %样本点
@@ -16,6 +16,8 @@ end
 plot(x,y);
 hold on 
     plot(x,sin(x),'r');
+    legend('H(x)','sin(x)');
+    title('H(x)与sin(x)的图像')
 hold off
 
 
@@ -30,19 +32,10 @@ x0 = linspace(-5,5,11);
 y0 = Runge(x0);
 dy0 = dRunge(x0);
 x = linspace(-5,5,100);
-yy = piecewise_Hermite_interp(x0,y0,dy0,x)
-m = length(x);
-n = length(x0);
-y = zeros(1,m);
-for k =1:1:m
-    for i =1:1:n-1
-    	   if x0(i)<=x(k) && x(k)<= x0(i+1)
-    	   	 y(k) = Hermite_interp(x0([i,i+1]),y0([i,i+1]),dy0([i,i+1]),x(k));
-    	   end
-    end
-end
+yy = piecewise_Hermite_interp(x0,y0,dy0,x);
 plot(x,yy);
 hold on
 plot(x,Runge(x),'r');
+legend('分段Hermite','Runge函数')
 hold off
 
