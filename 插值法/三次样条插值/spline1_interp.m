@@ -14,7 +14,7 @@ function [s,M] = spline1_interp(x0,y0,df0,dfn,x)
     mu = 1-lamda;
     d= zeros(1,n);
     % 计算差商
-    D = divided_differences(x0,y0,4)
+    D = divided_differences(x0,y0,4);
     d(2:n-1) = D(3:n,4); %取二阶差商
     d(1) = 6/h(1) * ((y0(2)-y0(1))/h(1) - df0);
     d(n) = 6/h(n-1) * (dfn - (y0(n)-y0(n-1))/h(n-1));

@@ -1,9 +1,8 @@
-%% Jacobi test
+% Jacobi test
 % time :      1/28/2023
+%% 
 clc;clear all,format long;
-addpath("../base","../Gauss消去法","../Jacobi迭代法") % 加载函数文件
 N = 100; e_tol = 1e-8;
-%% example 1
 A=[10 -1 2 0; -1 11 -1 3; 2 -1 10 -1; 0 3 -1 8];
 b=[6; 25; -11; 15];
 x0=[0; 0; 0; 0];
@@ -26,18 +25,23 @@ toc(t2);
         figure(1);
         plot(1:k1,x11(1,:),'-*r',1:k1,x11(2,:),'-og', 1:k1,x11(3,:),'-+b',1:k1,x11(4,:),'-dk');
         legend('x_1','x_2','x_3','x_4');
+        title('每个数值解的变化')
     % 残差变化
         figure(2);
         plot(1:k1,res,'-*r');
         legend('残差');
+        title('残差变化')
     % 误差
         figure(3);
         plot(1:k1,error(1,:),'-*r',1:k1,error(2,:),'-og', 1:k1,error(3,:),'-+b',1:k1,error(4,:),'-dk');
         legend('x_1','x_2','x_3','x_4');
+        title('误差变化')
         
         
 %% 测试 消去法 与 迭代法 在处理稀疏矩阵问题上的差距
-n = 6; % 
+clc;clear all,format long;
+N = 100; e_tol = 1e-8;
+n = 6; %  n 为 6 50 100 500 1000
 [A,b,x]=setup_Sparse1(n);
 x0 = zeros(n,1); 
 

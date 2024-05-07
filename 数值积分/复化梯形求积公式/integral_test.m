@@ -1,6 +1,7 @@
 % 复化梯形求积例子
 %   last modified:      07/11/2023
 %   file need: comp_tra_integral.m
+%%
 clc;clear all;format long;
 f = @(x) 4./(1+x.^2);
 
@@ -12,5 +13,6 @@ for n = N
     delta(k) = abs(pi-T);
     k++;
 end
-    	plot(N,delta,'b');
+    	plot(N,delta,'-ob');
+    title('T与pi 的误差随n的变化')
 disp(delta);

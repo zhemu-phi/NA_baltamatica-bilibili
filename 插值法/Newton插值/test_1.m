@@ -19,12 +19,14 @@ figure(1)
     
 %%
 clc;clear all;
-x0 = linspace(0,10,5);
+x0 = linspace(0,15,15);
 y0 = sin(x0);
-x= linspace(0,10,100);
+x= linspace(0,15,100);
 y = sin(x);
 [s,M] = Newton_interp(x0,y0,x);
 plot(x,y,'r');
 hold on
     plot(x,s,'b');
+    plot(x0,y0,'o');
     hold off
+    legend('sin(x)','N(x)');

@@ -1,5 +1,4 @@
-%   last modified:      04/14/2024
-% 使用前 递归添加路径
+%   last modified:      04/23/2024
 %% 1 I 型三次样条插值 课本P55 例2.13
 clc;clear all;
 x0 = [0 1 2 3];
@@ -11,6 +10,8 @@ x = 1/2;
 x= linspace(0,3);
 s = spline1_interp(x0,y0,df0,dfn,x);
 plot(x,s)
+hold on
+plot (x0,y0,'o')
 
 %% 2 II 型三次样条插值  y = x^3
 clc;clear all;
@@ -27,14 +28,16 @@ hold off
 
 %% 3 III 型三次样条插值  y =sin(x)
 clc;clear all;
-x0 = linspace(0,2*pi,30);
+x0 = linspace(0,4*pi,50);
 y0 = sin(x0);
-x= linspace(0,2*pi,200);
+x= linspace(0,4*pi,200);
 y = sin(x);
 [s,M] = spline3_interp(x0,y0,x);
 plot(x,y,'r');
 hold on
     plot(x,s,'b');
+    plot(x0,y0,'o');
+    legend('sin(x)','s(x)')
     hold off
 
 %% 4 Runge函数下的表现 
@@ -50,4 +53,8 @@ s = spline1_interp(x0,y0,df0,dfn,x);
 plot(x,y,'r');
 hold on
     plot(x,s,'b');
+    plot(x0,y0,'o');
+    legend('f(x)','s(x)')
     hold off
+
+delta = max(abs(y- s))

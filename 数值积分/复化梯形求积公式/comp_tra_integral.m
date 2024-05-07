@@ -4,8 +4,6 @@ function T = comp_tra_integral(a,b,n,f)
 % f：定义好的函数
 %
 %   Version:            1.0
-%   Author:             PHI1_NA
-%   Contact:            PHI1_NA@outlook.com
 %   last modified:      07/10/2023
     h = (b-a)/n;
     k = 0:1:n;
