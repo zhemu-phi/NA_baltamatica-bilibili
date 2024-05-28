@@ -1,4 +1,6 @@
 # 数值计算相关的代码及文档
+对应CSDN主页（方便查看文章）：
+https://blog.csdn.net/Math_Boy_W?type=blog
 
 B站对应视频主页：
 https://space.bilibili.com/3493276185266693
