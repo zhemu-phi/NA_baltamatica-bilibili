@@ -16,7 +16,7 @@ function [x,k,r] = myJacobi(A,b,x0,e_tol,N)
         r = norm(b - A*x(:,k+2),2); % 残差
         k = k+1;
     end
-    x = x(:,2:k+1); % x取迭代时的结果
+    x = x(:,1:k+1); % x取迭代时的结果 包含初值
     
     if k>N
         fprintf('迭代超出最大迭代次数');

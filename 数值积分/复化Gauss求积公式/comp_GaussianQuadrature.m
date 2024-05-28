@@ -8,13 +8,13 @@ function  GS = comp_GaussianQuadrature(a,b,n1,n2,f)
 %   Version:            1.0
 %   last modified:      08/04/2023
 %   file need:Gaussian_Quadrature
-S = zeros(1,n2);
-h = (b-a)/n2;
-k = 0:1:n2;
-jd = a + k * h;
-for i =1:1:n2
-    S(i) = Gaussian_Quadrature(jd(i),jd(i+1),n1,f);
-end
-	GS = sum(S);
+    S = zeros(1,n2);
+    h = (b-a)/n2;
+    k = 0:1:n2;
+    jd = a + k * h;
+    for i =1:1:n2
+        S(i) = Gaussian_Quadrature(jd(i),jd(i+1),n1,f);
+    end
+	    GS = sum(S);
 end
 

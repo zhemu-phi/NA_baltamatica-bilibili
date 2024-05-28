@@ -11,8 +11,9 @@ k = 1;
 for n = N
     T = comp_tra_integral(0,1,n,f);
     delta(k) = abs(pi-T);
-    k++;
+    k=k+1;
 end
     	plot(N,delta,'-ob');
+        legend('复化梯形公式')
     title('T与pi 的误差随n的变化')
 disp(delta);

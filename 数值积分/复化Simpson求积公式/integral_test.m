@@ -15,11 +15,11 @@ for n = N
     T = comp_tra_integral(0,1,n,f);
     delta1(k) = abs(pi - S);
     delta2(k) = abs(pi - T);
-    k++;
+    k=k+1;
 end
     figure(1)
     	plot(N,delta1,'-or');
-    title('复化Simpson误差随n的变化')
+    title('复化Simpson公式下误差随n的变化')
     figure(2)
     	plot(N,delta2,'-*b');
     title('复化梯形误差随n的变化')

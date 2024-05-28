@@ -1,5 +1,5 @@
 %   file need: Gaussian_Quadrature.m,   comp_GaussianQuadrature
-% GS求积例子1
+%% GS求积例子1
 clc,clear all,format long;
 f1 = @(x)1./(1+x.^2);
 a = -4; b = 4;
@@ -11,7 +11,7 @@ i=1;
 for n=3:1:20
 gs(i) = Gaussian_Quadrature(a,b,n,f1);
 delta(i) = abs(gs(i)-zhenshi);
-i++;
+i=i+1;
 end
 n = 3:1:20;
 zhenshi1 = ones(1,18)*zhenshi;
@@ -19,10 +19,11 @@ figure(1);
     plot(n,gs,'-*r');
     hold on
     plot(n,zhenshi1,'-b');
-figure(2);
-    plot(n,delta,'-*r');
-disp('delta',delta);
+    
+    legend('Gauss积分','真实值')
+    title('Gauss积分节点个数增加的情况')
 
+%%
 % 进行复化GS求积 对比看看
 % 变n1，不变n2
 GS1 = zeros(1,18);
@@ -31,7 +32,7 @@ i=1;
 for n = 3:1:20
     GS1(i) = comp_GaussianQuadrature(a,b,n,10,f1);
     delta1(i) = abs(GS1(i)-zhenshi);
-    i++;
+    i=i+1;
 end
 n = 3:1:20;
 figure(3);
@@ -50,7 +51,7 @@ i=1;
 for n = N
     GS2(i) = comp_GaussianQuadrature(a,b,6,n,f1);
     delta2(i) = abs(GS2(i)-zhenshi);
-    i++;
+    i=i+1;
 end
 zhenshi2 = ones(1,l)*zhenshi;
 figure(5);

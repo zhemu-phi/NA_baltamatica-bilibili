@@ -15,8 +15,9 @@ toc(t2);
 % 作图查看误差变化
     x_exact=[1;2;-1;1]; %真解
     n = length(b);
+    k1 = k1+1;
     error=zeros(n,k1);% 每个分量的误差
-        error = abs(x_exact - x11) 
+    error = abs(x_exact - x11) 
     res =zeros(1,k1); % 残差
     for i=1:1:k1
         res(i) = norm(b-A*x11(:,i),2);

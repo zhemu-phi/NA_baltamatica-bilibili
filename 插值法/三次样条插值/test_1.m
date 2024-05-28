@@ -12,7 +12,7 @@ s = spline1_interp(x0,y0,df0,dfn,x);
 plot(x,s)
 hold on
 plot (x0,y0,'o')
-
+title('三次样条插值')
 %% 2 II 型三次样条插值  y = x^3
 clc;clear all;
 x0 = linspace(0,3,10);

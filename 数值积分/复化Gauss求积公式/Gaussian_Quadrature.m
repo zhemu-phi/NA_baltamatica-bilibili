@@ -7,12 +7,12 @@ function output = Gaussian_Quadrature(a,b,n,f)
 %   Version:            1.0
 %   last modified:      08/04/2023
 %   file need: gs_quadrature.mat
-load('gs_quadrature.mat');
-xi = jiedian{n}; % 是列向量
-Xi = ((a+b)+(b-a)*xi)./2;
-Yi = f(Xi);
-alpha = quanzhong{n}; % 是列向量
-A = alpha .* Yi;
-Sum = sum(A);
-output = (b-a)/2 * Sum;
+    load('gs_quadrature.mat');
+    xi = jiedian{n}; % 是列向量
+    Xi = ((a+b)+(b-a)*xi)./2;
+    Yi = f(Xi);
+    alpha = quanzhong{n}; % 是列向量
+    A = alpha .* Yi;
+    Sum = sum(A);
+    output = (b-a)/2 * Sum;
 end
