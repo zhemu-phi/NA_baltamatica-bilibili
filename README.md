@@ -5,7 +5,7 @@ https://space.bilibili.com/3493276185266693
 
 本仓库内容范围：视频中我参与的代码及文档
 
-用到的数值计算软件：北太天元(baltamatica)
+使用到的数值计算软件： 北太天元 (Matlab下也可正常使用)
 
 baltamatica下载地址： https://www.baltamatica.com/
 
@@ -32,3 +32,5 @@ baltamatica下载地址： https://www.baltamatica.com/
   ___ 
   - Jacobi 迭代法
   - Gauss-Seidel 迭代法
+  ---
+  - 最速下降法
